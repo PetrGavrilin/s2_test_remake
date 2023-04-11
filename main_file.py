@@ -1,3 +1,5 @@
+!pip install -U spacy
+
 import streamlit as st
 import spacy
 import pandas as pd
