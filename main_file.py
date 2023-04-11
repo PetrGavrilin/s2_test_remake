@@ -1,5 +1,5 @@
 import streamlit as st
-import spaCy
+import spacy
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib
@@ -10,7 +10,7 @@ matplotlib.use("Agg")
 def text_analizator_rus(text):
 # функция выполняет анализ текста и возвращает датафрейм с его характеристиками
 
-    nlp_rus = spaCy.load('ru_core_news_lg')  # модель для русского языка
+    nlp_rus = spacy.load('ru_core_news_lg')  # модель для русского языка
     analysis_result = nlp_rus(text)
     c_tokens = [token.text for token in analysis_result]
     c_lemma = [token.lemma_ for token in analysis_result]
