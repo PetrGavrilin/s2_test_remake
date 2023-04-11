@@ -51,7 +51,7 @@ def main():
 
         result_of_analysis = text_analizator_rus(raw_text)
 
-        words_for_cloud = result_of_analysis.loc[(result_of_analysis['Часть речи'].isin(["NOUN", "VERB"]), 'Токены'].to_list()
+        words_for_cloud = result_of_analysis.loc[(result_of_analysis['Часть речи'].isin(["NOUN", "VERB"]), 'Токены'].tolist()
         string_for_cloud = ' '.join(words_for_cloud)
         make_word_cloud(string_for_cloud)        
 
