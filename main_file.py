@@ -1,4 +1,4 @@
-!pip install -U spacy
+pip install -U spacy
 
 import streamlit as st
 import spacy
